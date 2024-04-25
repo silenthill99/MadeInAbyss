@@ -2,6 +2,7 @@ package fr.silenthill99.madeinabyss;
 
 import fr.silenthill99.madeinabyss.custom.entities.MobModelLayer;
 import fr.silenthill99.madeinabyss.custom.entities.models.HumanEntityModel;
+import fr.silenthill99.madeinabyss.custom.entities.nanachi.NanachiEntity;
 import fr.silenthill99.madeinabyss.custom.entities.rico.RicoEntity;
 import fr.silenthill99.madeinabyss.custom.entities.rico.RicoRenderer;
 import fr.silenthill99.madeinabyss.init.ModEntityTypes;
@@ -46,6 +47,7 @@ public class Main {
 
     private void addEntityAttributeCreation(EntityAttributeCreationEvent event) {
         event.put(ModEntityTypes.RICO.get(), RicoEntity.createAttributes().build());
+        event.put(ModEntityTypes.NANACHI.get(), NanachiEntity.createMobAttributes().build());
     }
 
     private void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
