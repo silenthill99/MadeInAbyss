@@ -52,5 +52,6 @@ public class Main {
 
     private void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(MobModelLayer.RICO, HumanEntityModel::createBodyLayer);
+        event.registerLayerDefinition(MobModelLayer.NANACHI, HumanEntityModel::createBodyLayer);
     }
 }

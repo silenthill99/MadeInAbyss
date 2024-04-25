@@ -10,4 +10,8 @@ public class MobModelLayer {
             new ResourceLocation(Main.MODID, "rico"), "main"
     );
 
+    public static final ModelLayerLocation NANACHI = new ModelLayerLocation(
+            new ResourceLocation(Main.MODID, "nanachi"), "main"
+    );
+
 }
