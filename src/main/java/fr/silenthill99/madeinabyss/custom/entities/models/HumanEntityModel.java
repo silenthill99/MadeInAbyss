@@ -12,6 +12,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 
 public class HumanEntityModel<T extends Entity> extends EntityModel<T> {
@@ -60,7 +61,12 @@ public class HumanEntityModel<T extends Entity> extends EntityModel<T> {
 
 	@Override
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-
+		this.RightArm.xRot = Mth.cos(limbSwing * 0.6662f + (float) Math.PI) * limbSwingAmount;
+		this.LeftLeg.xRot = Mth.cos(limbSwing * 1) * -1 * limbSwingAmount;
+		this.Head.xRot = netHeadYaw / (180/ (float) Math.PI);
+		this.Head.yRot = headPitch / (180/ (float) Math.PI);
+		this.LeftArm.xRot = Mth.cos(limbSwing * 0.6662f + (float) Math.PI) * limbSwingAmount;
+		this.RightLeg.xRot = Mth.cos(limbSwing * 1) * -1 * limbSwingAmount;
 	}
 
 	@Override
