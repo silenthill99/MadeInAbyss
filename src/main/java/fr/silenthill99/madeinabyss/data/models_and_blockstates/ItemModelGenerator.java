@@ -18,6 +18,7 @@ public class ItemModelGenerator extends ItemModelProvider {
     @Override
     protected void registerModels() {
         templateSpawnEgg(ModItems.RICO_SPAWN_EGG.get());
+        templateSpawnEgg(ModItems.NANACHI_SPAWN_EGG.get());
     }
 
     private void templateSpawnEgg(ForgeSpawnEggItem item) {

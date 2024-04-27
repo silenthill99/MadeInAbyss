@@ -44,6 +44,7 @@ public class Main {
     private void addCreativeTab(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
             event.accept(ModItems.RICO_SPAWN_EGG);
+            event.accept(ModItems.NANACHI_SPAWN_EGG);
         }
     }
 
