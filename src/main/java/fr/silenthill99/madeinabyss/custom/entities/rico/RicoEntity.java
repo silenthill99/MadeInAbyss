@@ -2,15 +2,16 @@ package fr.silenthill99.madeinabyss.custom.entities.rico;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
-public class RicoEntity extends Mob {
+public class RicoEntity extends PathfinderMob {
 
-    public RicoEntity(EntityType<? extends Mob> typeIn, Level level) {
+    public RicoEntity(EntityType<? extends PathfinderMob> typeIn, Level level) {
         super(typeIn, level);
     }
 
@@ -25,6 +26,8 @@ public class RicoEntity extends Mob {
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(0, new FloatGoal(this));
+        this.goalSelector.addGoal(1, new LookAtPlayerGoal(this, Player.class,  3f));
         this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
+        this.goalSelector.addGoal(3, new WaterAvoidingRandomStrollGoal(this, 2));
     }
 }

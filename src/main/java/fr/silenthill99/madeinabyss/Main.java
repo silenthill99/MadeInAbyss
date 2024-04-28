@@ -52,7 +52,7 @@ public class Main {
 
     private void addEntityAttributeCreation(EntityAttributeCreationEvent event) {
         event.put(ModEntityTypes.RICO.get(), RicoEntity.createAttributes().build());
-        event.put(ModEntityTypes.NANACHI.get(), NanachiEntity.createMobAttributes().build());
+        event.put(ModEntityTypes.NANACHI.get(), NanachiEntity.createAttributes().build());
     }
 
     private void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
