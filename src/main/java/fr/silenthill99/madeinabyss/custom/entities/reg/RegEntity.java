@@ -18,7 +18,7 @@ public class RegEntity extends PathfinderMob {
     }
 
     public static AttributeSupplier.Builder createAttributes() {
-        return AttributeSupplier.builder()
+        return PathfinderMob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 20)
                 .add(Attributes.MOVEMENT_SPEED, 0.3f)
                 .add(Attributes.FOLLOW_RANGE, 3);
