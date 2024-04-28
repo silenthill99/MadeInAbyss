@@ -65,8 +65,8 @@ public class HumanEntityModel<T extends Entity> extends EntityModel<T> {
 		this.LeftLeg.xRot = Mth.cos(limbSwing * 1) * -1 * limbSwingAmount;
 		this.Head.xRot = netHeadYaw / (180/ (float) Math.PI);
 		this.Head.yRot = headPitch / (180/ (float) Math.PI);
-		this.LeftArm.xRot = Mth.cos(limbSwing * 0.6662f + (float) Math.PI) * limbSwingAmount;
-		this.RightLeg.xRot = Mth.cos(limbSwing * 1) * -1 * limbSwingAmount;
+		this.LeftArm.xRot = Mth.cos(limbSwing * 0.6662f + (float) Math.PI) * -limbSwingAmount;
+		this.RightLeg.xRot = Mth.cos(limbSwing * 1) * limbSwingAmount;
 	}
 
 	@Override
