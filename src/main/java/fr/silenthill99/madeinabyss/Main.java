@@ -6,6 +6,7 @@ import fr.silenthill99.madeinabyss.custom.entities.nanachi.NanachiEntity;
 import fr.silenthill99.madeinabyss.custom.entities.nanachi.NanachiRenderer;
 import fr.silenthill99.madeinabyss.custom.entities.rico.RicoEntity;
 import fr.silenthill99.madeinabyss.custom.entities.rico.RicoRenderer;
+import fr.silenthill99.madeinabyss.init.ModBlocks;
 import fr.silenthill99.madeinabyss.init.ModEntityTypes;
 import fr.silenthill99.madeinabyss.init.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -32,6 +33,7 @@ public class Main {
         bus.addListener(this::registerLayer);
         ModItems.ITEMS.register(bus);
         ModEntityTypes.ENTITY_TYPES.register(bus);
+        ModBlocks.BLOCKS.register(bus);
     }
 
     private void setup(FMLCommonSetupEvent event) {

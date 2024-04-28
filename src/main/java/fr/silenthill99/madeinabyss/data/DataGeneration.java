@@ -1,6 +1,7 @@
 package fr.silenthill99.madeinabyss.data;
 
 import fr.silenthill99.madeinabyss.Main;
+import fr.silenthill99.madeinabyss.data.loot_tables.LootTableGenerator;
 import fr.silenthill99.madeinabyss.data.models_and_blockstates.ItemModelGenerator;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -24,6 +25,8 @@ public class DataGeneration {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         generator.addProvider(event.includeClient(), new ItemModelGenerator(packOutput, existingFileHelper));
+
+        generator.addProvider(event.includeServer(), new LootTableGenerator(packOutput));
 
     }
 
