@@ -8,10 +8,10 @@ plugins {
 setLibsDirName("C:\\Users\\flori\\OneDrive\\Documents\\Minecraft\\MultiMC\\instances\\1.20.4\\.minecraft\\mods")
 
 version = mod_version
-group = mod_name
+group = mod_group_id
 
 base {
-    archivesName = mod_id
+    archivesName = mod_name
 }
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
