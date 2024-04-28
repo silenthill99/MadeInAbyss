@@ -14,4 +14,8 @@ public class MobModelLayer {
             new ResourceLocation(Main.MODID, "nanachi"), "main"
     );
 
+    public static final ModelLayerLocation REG = new ModelLayerLocation(
+            new ResourceLocation(Main.MODID, "reg"), "main"
+    );
+
 }

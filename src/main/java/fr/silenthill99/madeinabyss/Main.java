@@ -4,6 +4,8 @@ import fr.silenthill99.madeinabyss.custom.entities.MobModelLayer;
 import fr.silenthill99.madeinabyss.custom.entities.models.HumanEntityModel;
 import fr.silenthill99.madeinabyss.custom.entities.nanachi.NanachiEntity;
 import fr.silenthill99.madeinabyss.custom.entities.nanachi.NanachiRenderer;
+import fr.silenthill99.madeinabyss.custom.entities.reg.RegEntity;
+import fr.silenthill99.madeinabyss.custom.entities.reg.RegRenderer;
 import fr.silenthill99.madeinabyss.custom.entities.rico.RicoEntity;
 import fr.silenthill99.madeinabyss.custom.entities.rico.RicoRenderer;
 import fr.silenthill99.madeinabyss.init.ModBlocks;
@@ -39,6 +41,7 @@ public class Main {
     private void setup(FMLCommonSetupEvent event) {
         EntityRenderers.register(ModEntityTypes.RICO.get(), RicoRenderer::new);
         EntityRenderers.register(ModEntityTypes.NANACHI.get(), NanachiRenderer::new);
+        EntityRenderers.register(ModEntityTypes.REG.get(), RegRenderer::new);
     }
 
     private void clientSetup(FMLClientSetupEvent event) {}
@@ -53,10 +56,12 @@ public class Main {
     private void addEntityAttributeCreation(EntityAttributeCreationEvent event) {
         event.put(ModEntityTypes.RICO.get(), RicoEntity.createAttributes().build());
         event.put(ModEntityTypes.NANACHI.get(), NanachiEntity.createAttributes().build());
+        event.put(ModEntityTypes.REG.get(), RegEntity.createAttributes().build());
     }
 
     private void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(MobModelLayer.RICO, HumanEntityModel::createBodyLayer);
         event.registerLayerDefinition(MobModelLayer.NANACHI, HumanEntityModel::createBodyLayer);
+        event.registerLayerDefinition(MobModelLayer.REG, HumanEntityModel::createBodyLayer);
     }
 }
