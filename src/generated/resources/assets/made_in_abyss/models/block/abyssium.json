@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "made_in_abyss:block/abyssium"
+    "all": "made_in_abyss:block/abyssium_ore"
   }
 }

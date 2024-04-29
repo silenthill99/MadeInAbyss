@@ -13,6 +13,6 @@ public class BlockStateGenerator extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlockWithItem(ModBlocks.ABYSSIUM.get(), cubeAll(ModBlocks.ABYSSIUM.get()));
+        simpleBlockWithItem(ModBlocks.ABYSSIUM_ORE.get(), cubeAll(ModBlocks.ABYSSIUM_ORE.get()));
     }
 }

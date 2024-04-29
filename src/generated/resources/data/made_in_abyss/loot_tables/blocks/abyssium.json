@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "made_in_abyss:abyssium"
+          "name": "made_in_abyss:abyssium_ore"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "made_in_abyss:blocks/abyssium"
+  "random_sequence": "made_in_abyss:blocks/abyssium_ore"
 }

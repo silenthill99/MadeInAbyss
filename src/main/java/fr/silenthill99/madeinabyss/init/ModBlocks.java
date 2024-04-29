@@ -14,7 +14,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Main.MODID);
 
-    public static final RegistryObject<Block> ABYSSIUM = createBlock("abyssium", () ->
+    public static final RegistryObject<Block> ABYSSIUM_ORE = createBlock("abyssium_ore", () ->
             new Block(BlockBehaviour.Properties.of().strength(3f, 3.5f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> createBlock(String name, Supplier<T> supplier) {

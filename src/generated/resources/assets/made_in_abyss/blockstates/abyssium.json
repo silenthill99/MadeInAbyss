@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "made_in_abyss:block/abyssium"
+      "model": "made_in_abyss:block/abyssium_ore"
     }
   }
 }

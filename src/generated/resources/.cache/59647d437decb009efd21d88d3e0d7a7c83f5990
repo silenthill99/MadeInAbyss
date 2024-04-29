@@ -1,4 +1,4 @@
 // 1.20.4	2024-04-29T11:19:37.6467079	Block States: made_in_abyss
-cefdee77c1d280ff9400230699fc20714a718f80 assets/made_in_abyss/blockstates/abyssium.json
-cc5eca759de66276984afcc214f34092d4536beb assets/made_in_abyss/models/block/abyssium.json
-5ffc80410afc3174dd78e736d422621768faff76 assets/made_in_abyss/models/item/abyssium.json
+cefdee77c1d280ff9400230699fc20714a718f80 assets/made_in_abyss/blockstates/abyssium_ore.json
+cc5eca759de66276984afcc214f34092d4536beb assets/made_in_abyss/models/block/abyssium_ore.json
+5ffc80410afc3174dd78e736d422621768faff76 assets/made_in_abyss/models/item/abyssium_ore.json
