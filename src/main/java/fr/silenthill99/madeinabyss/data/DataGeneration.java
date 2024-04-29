@@ -4,6 +4,7 @@ import fr.silenthill99.madeinabyss.Main;
 import fr.silenthill99.madeinabyss.data.loot_tables.LootTableGenerator;
 import fr.silenthill99.madeinabyss.data.models_and_blockstates.BlockStateGenerator;
 import fr.silenthill99.madeinabyss.data.models_and_blockstates.ItemModelGenerator;
+import fr.silenthill99.madeinabyss.data.tags.BlockTagGenerator;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -29,6 +30,7 @@ public class DataGeneration {
         generator.addProvider(event.includeClient(), new ItemModelGenerator(packOutput, existingFileHelper));
 
         generator.addProvider(event.includeServer(), new LootTableGenerator(packOutput));
+        generator.addProvider(event.includeServer(), new BlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
 
     }
 
