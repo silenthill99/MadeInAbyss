@@ -5,7 +5,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
 }
 
-setLibsDirName("C:\\Users\\flori\\OneDrive\\Documents\\Minecraft\\MultiMC\\instances\\1.20.4\\.minecraft\\mods")
+//setLibsDirName("C:\\Users\\flori\\OneDrive\\Documents\\Minecraft\\MultiMC\\instances\\1.20.4\\.minecraft\\mods")
 
 version = mod_version
 group = mod_group_id
