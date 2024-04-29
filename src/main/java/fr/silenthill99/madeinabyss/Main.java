@@ -51,6 +51,10 @@ public class Main {
             event.accept(ModItems.RICO_SPAWN_EGG);
             event.accept(ModItems.NANACHI_SPAWN_EGG);
         }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ABYSSIUM);
+        }
     }
 
     private void addEntityAttributeCreation(EntityAttributeCreationEvent event) {
