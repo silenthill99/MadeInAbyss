@@ -19,4 +19,8 @@ public class ModItems {
     public static final RegistryObject<ForgeSpawnEggItem> NANACHI_SPAWN_EGG = ITEMS.register("nanachi_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.NANACHI, 0x808080, 0xffcc66,
                     new Item.Properties()));
+
+    public static final RegistryObject<Item> ABYSSIUM = ITEMS.register("abyssium", () -> new Item(
+            new Item.Properties()
+    ));
 }
