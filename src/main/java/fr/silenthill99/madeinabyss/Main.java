@@ -55,6 +55,10 @@ public class Main {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.ABYSSIUM_ORE);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.ABYSSIUM);
+        }
     }
 
     private void addEntityAttributeCreation(EntityAttributeCreationEvent event) {
