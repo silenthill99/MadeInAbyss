@@ -16,6 +16,7 @@ public class BlockLootTablesGenerator extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.ABYSSIUM_ORE.get());
+        dropSelf(ModBlocks.ABYSSIUM_BLOCK.get());
     }
 
     @Override

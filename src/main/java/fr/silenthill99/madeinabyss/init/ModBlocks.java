@@ -17,6 +17,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ABYSSIUM_ORE = createBlock("abyssium_ore", () ->
             new Block(BlockBehaviour.Properties.of().strength(3f, 3.5f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> ABYSSIUM_BLOCK = createBlock("abyssium_block", () ->
+            new Block(BlockBehaviour.Properties.ofFullCopy(ABYSSIUM_ORE.get())));
+
     private static <T extends Block> RegistryObject<T> createBlock(String name, Supplier<T> supplier) {
         RegistryObject<T> block = BLOCKS.register(name, supplier);
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
