@@ -20,6 +20,7 @@ public class ItemModelGenerator extends ItemModelProvider {
     protected void registerModels() {
         templateSpawnEgg(ModItems.RICO_SPAWN_EGG.get());
         templateSpawnEgg(ModItems.NANACHI_SPAWN_EGG.get());
+        templateSpawnEgg(ModItems.REG_SPAWN_EGG.get());
         simpleItem(ModItems.ABYSSIUM.get());
     }
 

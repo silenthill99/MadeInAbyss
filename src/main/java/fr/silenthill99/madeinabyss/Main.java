@@ -50,6 +50,7 @@ public class Main {
         if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
             event.accept(ModItems.RICO_SPAWN_EGG);
             event.accept(ModItems.NANACHI_SPAWN_EGG);
+            event.accept(ModItems.REG_SPAWN_EGG);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
