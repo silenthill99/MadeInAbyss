@@ -26,5 +26,14 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.ABYSSIUM_ORE.get(),
                 ModBlocks.ABYSSIUM_BLOCK.get()
         );
+        tag(BlockTags.LOGS_THAT_BURN).add(
+                ModBlocks.ABYSSWOOD_LOG.get(),
+                ModBlocks.ABYSSWOOD_WOOD.get(),
+                ModBlocks.STRIPPED_ABYSSWOOD_LOG.get(),
+                ModBlocks.STRIPPED_ABYSSWOOD_WOOD.get()
+        );
+        tag(BlockTags.PLANKS).add(
+                ModBlocks.ABYSSWOOD_PLANKS.get()
+        );
     }
 }

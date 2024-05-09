@@ -56,6 +56,12 @@ public class Main {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.ABYSSIUM_ORE);
             event.accept(ModBlocks.ABYSSIUM_BLOCK);
+            event.accept(ModBlocks.ABYSSWOOD_LOG);
+            event.accept(ModBlocks.ABYSSWOOD_WOOD);
+            event.accept(ModBlocks.STRIPPED_ABYSSWOOD_LOG);
+            event.accept(ModBlocks.STRIPPED_ABYSSWOOD_WOOD);
+            event.accept(ModBlocks.ABYSSWOOD_LEAVES);
+            event.accept(ModBlocks.ABYSSWOOD_PLANKS);
         }
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {

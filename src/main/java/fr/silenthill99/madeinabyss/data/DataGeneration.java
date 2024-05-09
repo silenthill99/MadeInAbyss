@@ -6,6 +6,7 @@ import fr.silenthill99.madeinabyss.data.models_and_blockstates.BlockStateGenerat
 import fr.silenthill99.madeinabyss.data.models_and_blockstates.ItemModelGenerator;
 import fr.silenthill99.madeinabyss.data.recipes.RecipeGenerator;
 import fr.silenthill99.madeinabyss.data.tags.BlockTagGenerator;
+import fr.silenthill99.madeinabyss.data.tags.ItemTagsGenerator;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -31,7 +32,10 @@ public class DataGeneration {
         generator.addProvider(event.includeClient(), new ItemModelGenerator(packOutput, existingFileHelper));
 
         generator.addProvider(event.includeServer(), new LootTableGenerator(packOutput));
-        generator.addProvider(event.includeServer(), new BlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
+        BlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
+                new BlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
+        generator.addProvider(event.includeServer(), new ItemTagsGenerator(packOutput, lookupProvider,
+                blockTagGenerator.contentsGetter(), existingFileHelper));
         generator.addProvider(event.includeServer(), new RecipeGenerator(packOutput));
 
     }

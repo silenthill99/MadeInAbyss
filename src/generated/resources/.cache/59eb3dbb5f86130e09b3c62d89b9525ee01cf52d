@@ -1,3 +1,9 @@
-// 1.20.4	2024-04-30T16:25:04.3253391	Loot Tables
+// 1.20.4	2024-05-09T15:43:17.1845345	Loot Tables
 8996ab643a941a7fba9f9feb733e9cd2239243bc data/made_in_abyss/loot_tables/blocks/abyssium_block.json
 2f5ebada35d3096402faf330a144943ca100fe2b data/made_in_abyss/loot_tables/blocks/abyssium_ore.json
+ff4eb826d8997fe33f87f2bfc617f72536269c7f data/made_in_abyss/loot_tables/blocks/abysswood_leaves.json
+773b07051e44469ee4a464dc30e183e6d99446ff data/made_in_abyss/loot_tables/blocks/abysswood_log.json
+2f0fcd1c421f13b56536fdd2dd4092c2a5edc6af data/made_in_abyss/loot_tables/blocks/abysswood_planks.json
+6bb81717778a66ebe527a99039a8a21cbbdff117 data/made_in_abyss/loot_tables/blocks/abysswood_wood.json
+b1595a6ceb7b0c02f62d459be6babda740d5606a data/made_in_abyss/loot_tables/blocks/stripped_abysswood_log.json
+2d6df3870179ee088b63946bf873a16197023aaa data/made_in_abyss/loot_tables/blocks/stripped_abysswood_wood.json

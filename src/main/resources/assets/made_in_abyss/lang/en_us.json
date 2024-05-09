@@ -1,6 +1,12 @@
 {
   "block.made_in_abyss.abyssium_block": "Abyssium block",
   "block.made_in_abyss.abyssium_ore":"Abyssium ore",
+  "block.made_in_abyss.abysswood_leaves": "Abysswood leaves",
+  "block.made_in_abyss.abysswood_log": "Abysswood log",
+  "block.made_in_abyss.abysswood_planks": "Abysswood planks",
+  "block.made_in_abyss.abysswood_wood": "Abysswood wood",
+  "block.made_in_abyss.stripped_abysswood_log": "Stripped abysswood log",
+  "block.made_in_abyss.stripped_abysswood_wood": "Stripped abysswood wood",
   "entity.made_in_abyss.nanachi": "Nanachi",
   "entity.made_in_abyss.reg": "Reg",
   "entity.made_in_abyss.rico": "Rico",

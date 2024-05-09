@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "made_in_abyss:block/abysswood_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "made_in_abyss:block/abysswood_log"
+    },
+    "axis=z": {
+      "model": "made_in_abyss:block/abysswood_log_horizontal",
+      "x": 90
+    }
+  }
+}

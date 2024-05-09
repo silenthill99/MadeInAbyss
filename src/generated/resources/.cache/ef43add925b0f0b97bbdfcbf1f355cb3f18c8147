@@ -1,3 +1,5 @@
-// 1.20.4	2024-04-30T16:27:00.1285844	Tags for minecraft:block mod id made_in_abyss
+// 1.20.4	2024-05-09T15:56:41.5066067	Tags for minecraft:block mod id made_in_abyss
+4ffa9cf1d82fe6d4c27e37541630a1719b1b3636 data/minecraft/tags/blocks/logs_that_burn.json
 fcdeba1af0f66079389ca00bf27c3302c4445e48 data/minecraft/tags/blocks/mineable/pickaxe.json
 fcdeba1af0f66079389ca00bf27c3302c4445e48 data/minecraft/tags/blocks/needs_iron_tool.json
+595fd2c3119eda6429bea7a3c44c8610785319a5 data/minecraft/tags/blocks/planks.json

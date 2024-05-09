@@ -17,6 +17,12 @@ public class BlockLootTablesGenerator extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.ABYSSIUM_ORE.get());
         dropSelf(ModBlocks.ABYSSIUM_BLOCK.get());
+        dropSelf(ModBlocks.ABYSSWOOD_LOG.get());
+        dropSelf(ModBlocks.ABYSSWOOD_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_ABYSSWOOD_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_ABYSSWOOD_WOOD.get());
+        dropSelf(ModBlocks.ABYSSWOOD_PLANKS.get());
+        add(ModBlocks.ABYSSWOOD_LEAVES.get(), block -> createLeavesDrops(block, ModBlocks.ABYSSWOOD_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     @Override

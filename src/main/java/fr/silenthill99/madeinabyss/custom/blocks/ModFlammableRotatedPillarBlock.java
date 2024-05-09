@@ -1,0 +1,57 @@
+package fr.silenthill99.madeinabyss.custom.blocks;
+
+import fr.silenthill99.madeinabyss.init.ModBlocks;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.ToolAction;
+import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
+
+    public ModFlammableRotatedPillarBlock(Properties properties) {
+        super(properties);
+    }
+
+    @Override
+    public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+        return true;
+    }
+
+    @Override
+    public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+        return 5;
+    }
+
+    @Override
+    public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+        return 5;
+    }
+
+    @Override
+    public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
+
+        HashMap<RegistryObject<Block>, RegistryObject<Block>> stripables_blocks = new HashMap<>();
+
+        stripables_blocks.put(ModBlocks.ABYSSWOOD_LOG, ModBlocks.STRIPPED_ABYSSWOOD_LOG);
+        stripables_blocks.put(ModBlocks.ABYSSWOOD_WOOD, ModBlocks.STRIPPED_ABYSSWOOD_WOOD);
+
+        if (context.getItemInHand().getItem() instanceof AxeItem) {
+            for (Map.Entry<RegistryObject<Block>, RegistryObject<Block>> blocks : stripables_blocks.entrySet()) {
+                if (state.is(blocks.getKey().get())) {
+                    return blocks.getValue().get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+                }
+            }
+        }
+        return super.getToolModifiedState(state, context, toolAction, simulate);
+    }
+}
