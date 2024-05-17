@@ -25,20 +25,20 @@ public class ModBlocks {
             new Block(BlockBehaviour.Properties.of().strength(3f, 3.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> ABYSSIUM_BLOCK = createBlock("abyssium_block", () ->
-            new Block(BlockBehaviour.Properties.ofFullCopy(ABYSSIUM_ORE.get())));
+            new Block(BlockBehaviour.Properties.copy(ABYSSIUM_ORE.get())));
 
 
     public static final RegistryObject<Block> ABYSSWOOD_LOG = createBlock("abysswood_log", () ->
-            new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+            new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> ABYSSWOOD_WOOD = createBlock("abysswood_wood", () ->
-            new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+            new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
     public static final RegistryObject<Block> STRIPPED_ABYSSWOOD_LOG = createBlock("stripped_abysswood_log", () ->
-            new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+            new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_ABYSSWOOD_WOOD = createBlock("stripped_abysswood_wood", () ->
-            new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+            new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
 
     public static final RegistryObject<Block> ABYSSWOOD_PLANKS = createBlock("abysswood_planks", () ->
-            new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)){
+            new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -55,7 +55,7 @@ public class ModBlocks {
                 }
             });
     public static final RegistryObject<Block> ABYSSWOOD_LEAVES = createBlock("abysswood_leaves", () ->
-            new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)){
+            new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
